@@ -1,4 +1,4 @@
-# **Stenovia Lite**
+# **Stenovia**
 
 A lightweight full-stack web application for real-time typing speed tests, user performance tracking, and leaderboard ranking.
 
