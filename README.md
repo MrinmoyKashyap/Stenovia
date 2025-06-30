@@ -24,7 +24,7 @@ A lightweight full-stack web application for real-time typing speed tests, user 
 ##  Technologies Used
 
 **Frontend:**
-*Note: Frontend code isn't included in this file, but typically uses HTML, CSS, JS or frameworks like React.*
+ HTML, CSS, JS 
 
 **Backend:**
 
