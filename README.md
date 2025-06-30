@@ -1,6 +1,6 @@
 # **Stenovia**
 
-A lightweight full-stack web application for real-time typing speed tests, user performance tracking, and leaderboard ranking.
+A Full-Stack Web Application for Real-Time Typing Speed Evaluation and Skill Tracking.
 
 
 ##  Features
