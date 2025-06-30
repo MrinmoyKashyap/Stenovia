@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profile – Stenovia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo"><a href="index.html">Stenovia</a></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a class="active" href="profile.html">Profile</a></li>
+  </ul>
+
+  <!-- NOTE: no static Login/Signup here any more -->
+  <div id="navAuth" class="auth-links"></div>
+</nav>
+
+<main class="page" id="profWrap">
+  <h1>Your profile</h1>
+
+  <!-- STATIC placeholder shown when not logged in -->
+  <div class="profile-box">
+    <dl>
+      <dt>User&nbsp;ID</dt><dd>123</dd>
+      <dt>Username</dt><dd>example_user</dd>
+      <dt>Email</dt><dd>user@example.com</dd>
+      <dt>Joined</dt><dd>January 1, 2025</dd>
+    </dl>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

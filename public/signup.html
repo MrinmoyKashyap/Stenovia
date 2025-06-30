@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sign Up – Stenovia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <nav class="nav">
+  <div class="logo"><a href="index.html">Stenovia</a></div>
+  <ul class="nav-links">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="profile.html">Profile</a></li>
+  </ul>
+  <div class="auth-links">
+    <a class="plain" href="login.html">Login</a>
+    <a class="button" href="signup.html">Sign Up</a>
+  </div>
+</nav>
+    </div>
+    <div class="form-page">
+        <div class="signup-container">
+    <a href="index.html" class="logo">Stenovia</a>
+    <h1>Create an account</h1>
+    <p class="desc">Enter your information to get started</p>
+    <div id="signupError" class="error"></div>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="suUsername">Username</label>
+        <input id="suUsername" type="text" placeholder="Choose a username" required>
+      </div>
+      <div class="form-group">
+        <label for="suEmail">Email</label>
+        <input id="suEmail" type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="suPassword">Password</label>
+        <input id="suPassword" type="password" placeholder="Create a password" required>
+      </div>
+      <div class="form-group">
+        <label for="suConfirm">Confirm Password</label>
+        <input id="suConfirm" type="password" placeholder="Confirm your password" required>
+      </div>
+      <div class="form-group checkbox">
+        <input id="suTOS" type="checkbox" required>
+        <label for="suTOS">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+      </div>
+      <button type="submit">Create Account</button>
+      <p class="login-link">
+        Already have an account? <a href="login.html">Log in</a>
+      </p>
+    </form>
+  </div>
+
+    </div>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>

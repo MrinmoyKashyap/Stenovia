@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login – Stenovia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <nav class="nav">
+            <div class="logo"><a href="index.html">Stenovia</a></div>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="auth-links">
+                <a class="plain" href="login.html">Login</a>
+                <a class="button" href="signup.html">Sign Up</a>
+            </div>
+        </nav>
+    </div>
+    <div class="form-page">
+        
+  <div class="signup-container">
+    <a href="index.html" class="logo">Stenovia</a>
+    <h1>Log in</h1>
+    <p class="desc">Enter your credentials</p>
+    <div id="loginError" class="error"></div>
+    <form id="loginFormPage">
+      <div class="form-group">
+        <label for="liEmail">Email</label>
+        <input id="liEmail" type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="liPassword">Password</label>
+        <input id="liPassword" type="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p class="login-link">
+        Don’t have an account? <a href="signup.html">Sign up</a>
+      </p>
+    </form>
+  </div>
+
+    </div>
+      <script src="app.js"></script>
+</body>
+</html>

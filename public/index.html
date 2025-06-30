@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Stenovia – Typing Test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo"><a href="index.html">Stenovia</a></div>
+  <ul class="nav-links">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="profile.html">Profile</a></li>
+  </ul>
+  <div id="navAuth" class="auth-links"></div>
+</nav>
+
+<header class="hero">
+  <h1 class="title">Stenovia</h1>
+  <p class="subtitle">
+    Improve your typing speed with our modern, elegant typing test platform.
+    Challenge yourself, track your progress, and compete with others.
+  </p>
+  <div class="hero-actions">
+    <a href="#typing" class="button">Start Testing ▸</a>
+    <a href="leaderboard.html" class="button ghost">View Leaderboard</a>
+  </div>
+</header>
+<section id="typing" class="typing-wrapper">
+  <div class="typing-card">
+    <div class="stats">
+      <div><span id="wpm">0</span><small>WPM</small></div>
+      <div><span id="accuracy">100</span><small>Accuracy</small></div>
+      <div><span id="time">30</span><small>Time</small></div>
+      <div class="stat-buttons">
+        <button id="startBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+    <p id="quote" class="quote">
+    </p>
+    <textarea id="input" class="input" placeholder="Start typing..." disabled></textarea>
+  </div>
+  <typing-test></typing-test>
+</section>
+<p class="center">
+  <a style="color:var(--primary)" href="history.html">View your history →</a>
+</p>
+<script type="module" src="typing-test.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Leaderboard – Stenovia</title>
+  <link rel="stylesheet" href="style.css">
+</head><body>
+<div>
+        <nav class="nav">
+  <div class="logo"><a href="index.html">Stenovia</a></div>
+
+  <ul class="nav-links">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="profile.html">Profile</a></li>
+  </ul>
+
+  <!-- dynamically populated by app.js -->
+  <div id="navAuth" class="auth-links"></div>
+</nav>
+    </div>
+
+<main class="page">
+  <h1>Global Leaderboard</h1>
+  <table id="boardTbl">
+    <thead><tr><th>#</th><th>User</th><th>Average WPM</th></tr></thead>
+    <tbody></tbody>
+  </table>
+</main>
+
+<script src="app.js"></script>
+</body></html>

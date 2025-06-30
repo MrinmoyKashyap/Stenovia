@@ -1,0 +1,258 @@
+/* ---------- THEME ---------- */
+:root{
+  --primary:#a855ff;            /* purple glow */
+  --bg:#080013;
+  --bg-card:#0d0d0d;
+  --text:#e8e8e8;
+  --text-soft:#c7c7d4;
+}
+
+/* ---------- RESET ---------- */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Poppins',sans-serif;
+  background:radial-gradient(circle at top,var(--bg) 0%,#000 90%);
+  color:var(--text);line-height:1.6;
+}
+
+/* ---------- NAV ---------- */
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1rem 8vw;background:#13062c99;backdrop-filter:blur(10px);
+  position:sticky;top:0;
+}
+.logo{
+  display:flex;align-items:center;gap:.4rem;
+  font-weight:600;font-size:1.25rem;color:var(--primary)
+}
+.logo img{
+  width:28px;
+  filter:invert(56%) sepia(89%) saturate(490%) hue-rotate(238deg) brightness(96%) contrast(93%);
+}
+
+.nav-links{list-style:none;display:flex;gap:2rem}
+.nav-links a{
+  color:var(--text-soft);text-decoration:none;font-weight:500;transition:.2s
+}
+.nav-links a:hover{color:var(--primary)}
+.nav-links a.active{
+  color:var(--primary);font-weight:600;border-bottom:2px solid var(--primary)
+}
+
+.auth-links{display:flex;align-items:center;gap:1rem}
+.auth-links .plain{color:var(--text-soft);text-decoration:none}
+.button,.auth-links .button{
+  display:inline-block;text-decoration:none;background:var(--primary);
+  color:#fff;font-weight:600;padding:.5rem 1rem;border-radius:.4rem;transition:.2s
+}
+.button:hover{opacity:.9}
+.button.ghost{background:#000;border:1px solid var(--primary)}
+.button.ghost:hover{background:var(--primary)}
+
+/* ---------- HERO ---------- */
+.hero{text-align:center;padding:8rem 10vw 4rem}
+.title{
+  font-family:'Orbitron',sans-serif;font-size:5rem;font-weight:700;
+  letter-spacing:2px;color:var(--primary)
+}
+.subtitle{max-width:700px;margin:2rem auto;color:var(--text-soft);font-size:1.1rem}
+.hero-actions{display:flex;justify-content:center;gap:1.5rem;margin-top:2.5rem}
+
+/* ---------- TYPING TEST ---------- */
+.typing-wrapper{display:flex;justify-content:center;padding:4rem 1rem}
+.typing-card{
+  width:min(680px,100%);background:var(--bg-card);
+  border:6px solid var(--primary);border-radius:1rem;
+  padding:2rem;display:flex;flex-direction:column;gap:1.5rem;
+  box-shadow:0 0 30px -8px var(--primary);
+}
+
+/* stats */
+.stats{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.stats div{display:flex;flex-direction:column;align-items:center}
+.stats span{font-weight:600;font-size:1.4rem}
+.stats small{font-size:.8rem;color:var(--text-soft);margin-top:-.2rem}
+.stat-buttons button{
+  background:#222;color:#fff;border:none;border-radius:.3rem;
+  padding:.3rem 1rem;font-weight:600;cursor:pointer;transition:.2s
+}
+.stat-buttons button:hover{background:var(--primary)}
+.stat-buttons button:disabled{opacity:.4;cursor:not-allowed}
+
+/* quote + textarea */
+.quote{
+  background:var(--primary);color:#fff;padding:1.2rem;
+  border-radius:.4rem;font-size:1.05rem
+}
+.word {
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.word.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+.word.correct {
+  color: #a6e3a1;
+}
+.word.incorrect {
+  color: #f38ba8;
+}
+.word.incorrect.active {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.input{
+  background:#0c0c0c;border:2px solid #222;color:#fff;
+  width:100%;min-height:70px;border-radius:.4rem;padding:.8rem;
+  resize:vertical;font-size:1rem;outline:none
+}
+.input:focus{border-color:var(--primary)}
+
+/* ---------- SHARED PAGE LAYOUT ---------- */
+.page{
+  max-width:900px;margin:4rem auto;padding:0 1rem;color:var(--text)
+}
+
+/* ---------- TABLES (history / leaderboard / about) ---------- */
+table{width:100%;border-collapse:collapse;margin-top:1rem}
+th,td{padding:.6rem;border-bottom:1px solid #222;text-align:center}
+th{color:var(--primary)}
+
+/* ---------- HISTORY SECTION ---------- */
+.history{padding:4rem 8vw;color:var(--text)}
+.history h2{margin-bottom:1rem;text-align:center}
+
+/* ---------- PROFILE BOX ---------- */
+.profile-box{
+  background:#0d0d0d;border:2px solid var(--primary);
+  border-radius:.6rem;padding:1.5rem;margin-top:2rem
+}
+.profile-box dt{
+  font-weight:600;margin-top:.6rem;color:var(--text-soft)
+}
+/* -------- PAGE WRAPPER -------- */
+.page{max-width:900px;margin:4rem auto;padding:0 1rem;color:var(--text)}
+.center{text-align:center}
+
+/* nav active link underline */
+.nav-links a.active{color:var(--primary);font-weight:600;border-bottom:2px solid var(--primary)}
+
+/* table styling shared by leaderboard / about */
+table{width:100%;border-collapse:collapse;margin-top:1rem}
+th,td{padding:.6rem;border-bottom:1px solid #222;text-align:center}
+th{color:var(--primary)}
+
+/* profile box */
+.profile-box{
+  background:#0d0d0d;border:2px solid var(--primary);
+  border-radius:.6rem;padding:1.5rem;margin-top:2rem
+}
+.profile-box dt{font-weight:600;margin-top:.6rem;color:var(--text-soft)}
+.profile-box dd{margin-left:0}
+/* ==== FORM-PAGE LAYOUT ==== */
+.form-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: var(--bg-card);
+  border: 1px solid #222;
+  border-radius: .6rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.signup-container .logo {
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+}
+
+.signup-container h1 {
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.signup-container .desc {
+  text-align: center;
+  color: var(--text-soft);
+  margin-bottom: 1.5rem;
+}
+
+.error {
+  color: #f87171;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: .4rem;
+  font-size: .9rem;
+}
+
+.form-group input {
+  padding: .8rem;
+  border: 1px solid #222;
+  border-radius: .5rem;
+  background: #000;
+  color: #fff;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: var(--primary);
+}
+
+.checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: .5rem;
+}
+
+.signup-container button {
+  width: 100%;
+  padding: .8rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.signup-container button:hover {
+  opacity: .9;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--text-soft);
+}
+
+.login-link a {
+  color: var(--primary);
+  text-decoration: none;
+}

@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About – Stenovia</title>
+  <link rel="stylesheet" href="style.css">
+</head><body>
+<div>
+        <nav class="nav">
+  <div class="logo"><a href="index.html">Stenovia</a></div>
+
+  <ul class="nav-links">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="profile.html">Profile</a></li>
+  </ul>
+
+  <!-- dynamically populated by app.js -->
+  <div id="navAuth" class="auth-links"></div>
+</nav>
+    </div>
+
+<main class="page">
+  <h1>About Stenovia</h1>
+  <p>
+    Stenovia is a lightweight typing-speed platform built with nothing more than
+    HTML, vanilla&nbsp;JavaScript, plain CSS and a minimal Node&nbsp;+&nbsp;Express&nbsp;+&nbsp;MySQL API.
+    Our goal is to prove that you don’t need heavy frameworks to craft
+    <em>fast and beautiful</em> web experiences.
+  </p>
+
+  <h2>Features</h2>
+  <ul>
+    <li>30-second typing test with real-time WPM &amp; accuracy</li>
+    <li>User accounts, JWT auth, personal history</li>
+    <li>Global leaderboard (top average WPM)</li>
+    <li>Fully responsive, dark-mode design</li>
+  </ul>
+
+  <h2>Tech Stack</h2>
+  <table>
+    <tr><th>Layer</th><th>What we use</th></tr>
+    <tr><td>Front-end</td><td>HTML + CSS + JavaScript (&lt; 3 KB JS gzipped)</td></tr>
+    <tr><td>Back-end</td><td>Node 20, Express 4, MySQL 8</td></tr>
+    <tr><td>Auth</td><td>bcryptjs + jsonwebtoken</td></tr>
+  </table>
+</main>
+
+<script src="app.js"></script>
+</body></html>
